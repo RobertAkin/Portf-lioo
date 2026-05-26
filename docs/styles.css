@@ -1,0 +1,94 @@
+/* ─── ESTILO GERAL ─── */
+body {
+    background-image: url("../img/fundo.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* ─── CONTAINER PRINCIPAL (EFEITO VIDRO) ─── */
+main {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: rgba(0, 0, 0, 0.15); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* ─── TÍTULOS E BOTÕES ─── */
+#meuNome {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+}
+
+button {
+    background-color: rgba(255, 132, 204, 0.856);
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+/* ─── TABELAS E CARDS ─── */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.card-dev {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 4px solid #ec8ac5;
+}
+
+/* ─── CAIXA DE INTERAÇÃO ─── */
+#caixa {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+#caixa.caixa-sucesso-rosa {
+    background-color: rgba(255, 132, 204, 0.856);
+    color: #000000;
+}
+
+/* ─── MODOS DE TEMA ─── */
+main.modo-escuro-tema {
+    background-color: rgba(15, 10, 12, 0.82);
+}
+
+main.modo-claro-tema {
+    background-color: rgba(247, 244, 244, 0.75);
+}
+
+main.modo-claro-tema, main.modo-claro-tema * {
+    color: #000000 ;
+}

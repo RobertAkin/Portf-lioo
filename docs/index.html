@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Portfólio | Robert Bernardo</title> 
+    <link rel="stylesheet" href="styles/styles.css"> 
+</head>
+<body>
+
+    <main> 
+        <h1 id="meuNome"></h1> 
+        <p id="tituloProfissional" style="text-align: center; font-weight: bold;"></p>
+        
+        <div id="quiz" style="text-align: center; margin-top: 20px;">
+            <div id="resultado-quiz"></div> 
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <button id="modoClaro/Escuro">Mudar para Modo Escuro</button>
+        </div>
+        
+        <div style="margin-top: 20px;">
+            <p id="minhaBio"></p>
+            <p id="anoFormatura"></p>
+            <p id="tempoFormatura"></p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+            <button id="btn-reflexao">Momento de Reflexão</button>
+            <p id="texto-reflexao" style="font-style: italic; margin-top: 15px; line-height: 1.6;"></p>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 25px;">
+            <h3 style="color: #fff; margin-bottom: 15px;">Lista de Presença</h3>
+            <div id="caixa" style="padding: 15px; margin-bottom: 20px; border-radius: 8px; font-weight: bold; background-color: rgba(255,255,255,0.1); color: #fff; transition: 0.5s;">
+                Deixe seu nome abaixo para assinar nossa lista de presença!
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+                <input type="text" id="nome" placeholder="Seu nome aqui..." style="padding: 10px; width: 80%; max-width: 300px; border-radius: 8px; border: 1px solid #c7a6ba; text-align: center;">
+                <button id="enviar">Enviar</button>
+            </div>
+        </div>
+        
+        <section id="area-da-musica" style="text-align: center; margin-top: 20px; padding: 20px; border: 2px dashed #e088bd; border-radius: 15px;">
+            <h2 id="titulo-musica">Melanie Martinez</h2>
+            <div style="margin-top: 15px;">
+                <input type="text" id="input-musica" placeholder="Nome da música..." style="padding: 8px; border-radius: 5px; border: 1px solid #f5b8dd;">
+                <button id="btn-buscar-letras" style="padding: 8px 15px; cursor: pointer;">Buscar Música</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
